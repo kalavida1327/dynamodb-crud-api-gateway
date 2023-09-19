@@ -6,6 +6,7 @@ import {
   DeleteItemCommand,
   ScanCommand,
   UpdateItemCommand,
+  
 } from '@aws-sdk/client-dynamodb'
 import { marshall, unmarshall } from '@aws-sdk/util-dynamodb';
 const getPost = async (event) => {
