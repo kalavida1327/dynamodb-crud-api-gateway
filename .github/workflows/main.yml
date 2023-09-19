@@ -17,18 +17,18 @@ jobs:
    # Steps represent a sequence of tasks that will be executed as part of the job  
    steps:
    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-   -uses: action/checkout@v2
-   -uses: action/cache@v2
-    with:
-      path: '**/node_modules'
-      key: ${{runner.os}}-modules-${{hashFiles('**/yarn.lock')}}
-   - name: Use Node.js 18.x
+    - uses: action/checkout@v2
+    - uses: action/cache@v2
+      with:
+       path: '**/node_modules'
+       key: ${{runner.os}}-modules-${{hashFiles('**/yarn.lock')}}
+    - name: Use Node.js 18.x
       uses: actions/setup-node@v1
       with:
         node-version: 18.x
-   - name: Install dependencies
+    - name: Install dependencies
       run: yarn install
-   - name: serverless deploy
+    - name: serverless deploy
       uses: serverless/github-action@master
       with:
         args: deploy
