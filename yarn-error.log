@@ -1,0 +1,55 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\mondi\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @aws-sdk/client-dynamodb @aws-sdk/util-dynamodb severless-iam-roles-per-function
+
+PATH: 
+  C:\Users\mondi\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\mondi\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\usr\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\java\jdk-18.0.2\bin;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\Amazon\AWSSAMCLI\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs;C:\Users\mondi\AppData\Local\Microsoft\WindowsApps;C:\Users\mondi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\java\jdk-18.0.2\bin;C:\Users\mondi\AppData\Local\GitHubDesktop\bin;C:\Users\mondi\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/severless-iam-roles-per-function: Not found
+      at Request.params.callback [as _callback] (C:\Users\mondi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66145:18)
+      at Request.self.callback (C:\Users\mondi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140890:22)
+      at Request.emit (node:events:527:28)
+      at Request.<anonymous> (C:\Users\mondi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141862:10)
+      at Request.emit (node:events:527:28)
+      at IncomingMessage.<anonymous> (C:\Users\mondi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141784:12)
+      at Object.onceWrapper (node:events:641:28)
+      at IncomingMessage.emit (node:events:539:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "dynamodb-crud-api-gateway",
+    "version": "1.0.0",
+    "description": "DynamoDB CRUD API using API Gateway and AWS Lambda",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "kavan",
+    "license": "ISC",
+    "dependencies": {
+      "@aws-sdk/client-dynamodb": "^3.18.0",
+      "@aws-sdk/util-dynamodb": "^3.18.0",
+      "aws-sdk": "^2.1460.0"
+    },
+    "devDependencies": {
+      "serverless-iam-roles-per-function": "^3.2.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
