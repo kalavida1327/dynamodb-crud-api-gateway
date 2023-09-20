@@ -1,12 +1,12 @@
-const {
+import {
   DynamoDBClient,
   GetItemCommand,
   PutItemCommand,
   DeleteItemCommand,
   ScanCommand,
   UpdateItemCommand,
-} = require('@aws-sdk/client-dynamodb');
-const { marshall, unmarshall } = require('@aws-sdk/util-dynamodb');
+} from '@aws-sdk/client-dynamodb'
+import { marshall, unmarshall } from '@aws-sdk/util-dynamodb';
 
 const client = new DynamoDBClient();
 
